@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.calculator {
+  display: grid;
+  grid-template-areas:
+    "in in in in"
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o p "
+    "r r r r ";
+
+  width: 450px;
+  height: 600px;
+  border: 3px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator > :nth-child(1) {
+  grid-area: in;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calculator > :nth-child(2) {
+  grid-area: a;
+  font-size: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calculator > :nth-child(3) {
+  grid-area: b;
+  font-size: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.calculator > :nth-child(4) {
+  grid-area: c;
+  font-size: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator > :nth-child(5) {
+  grid-area: d;
+  font-size: 2rem;
+}
+.calculator > :nth-child(6) {
+  grid-area: e;
+  font-size: 2rem;
+}
+.calculator > :nth-child(7) {
+  grid-area: f;
+  font-size: 2rem;
+}
+.calculator > :nth-child(8) {
+  grid-area: g;
+  font-size: 2rem;
+}
+.calculator > :nth-child(9) {
+  grid-area: h;
+  font-size: 2rem;
+}
+.calculator > :nth-child(10) {
+  grid-area: i;
+  font-size: 2rem;
+}
+.calculator > :nth-child(11) {
+  grid-area: j;
+  font-size: 2rem;
+}
+.calculator > :nth-child(12) {
+  grid-area: k;
+  font-size: 2rem;
+}
+.calculator > :nth-child(13) {
+  grid-area: l;
+  font-size: 2rem;
+}
+.calculator > :nth-child(14) {
+  grid-area: m;
+  font-size: 2rem;
+}
+.calculator > :nth-child(15) {
+  grid-area: n;
+  font-size: 2rem;
+}
+.calculator > :nth-child(16) {
+  grid-area: o;
+  font-size: 2rem;
+}
+.calculator > :nth-child(17) {
+  grid-area: p;
+  font-size: 2rem;
+}
+.calculator > :nth-child(18) {
+  grid-area: r;
+  font-size: 2rem;
 }
